@@ -2,7 +2,7 @@ pandas
 numpy
 seaborn
 matplotlib
-scikit-learn
 sklearn
 dataclasses
+dill
 #-e . 
