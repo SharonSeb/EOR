@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h1> PARAMETERS FOR PREDICTION - ENHANCED OIL RECOVERY </h1>
+        <form action="{{url_for('predict_datapoint')}}" method = "post">
+            <h1><legend> FOE Prediction </legend></h1>
+
+            <div class = "mb-3">
+
+                <label for="salt1">SALT1</label><br>
+                <input type="number" id="salt1" name="salt1"><br>
+                <label for="salt2">SALT2</label><br>
+                <input type="number" id="salt2" name="salt2"><br>
+                <select name="year" id="year">
+                    <option value=1990>1990</option>
+                    <option value=1991>1991</option>
+                    <option value=1992>1992</option>
+                    <option value=1993>1993</option>
+                    <option value=1994>1994</option>
+                    <option value=1995>1995</option>
+                  </select>
+                <label for="f1hs">F1HS</label><br>
+                <input type="number" id="f1hs" name="f1hs">
+                <label for="f2ls">F2LS</label><br>
+                <input type="number" id="f2ls" name="f2ls">
+            </div>
+
+
+
+        </form>
+        <h2> THE PREDICTION IS  {{results}}</h2>
+    </body>
+</html>
